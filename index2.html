@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot NFT Club Constitution</title>
+    <link rel="icon" href="robot.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: black;
+            font-family: Arial, sans-serif;
+            color: #0F0;
+            padding: 20px;
+        }
+        
+        #container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        #logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        
+        #sidebar {
+            float: left;
+            width: 200px;
+        }
+        
+        #navigation {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        #navigation a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        
+        #constitution {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        #home-link {
+            color: #0F0;
+            text-decoration: none;
+            margin-top: 20px;
+            display: block;
+        }
+        
+        #ad {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .progress-bar-container {
+            margin-bottom: 20px;
+        }
+        
+        .progress-bar {
+            background-color: #444;
+            border-radius: 20px;
+            padding: 3px;
+            margin-bottom: 5px;
+        }
+        
+        .progress-bar-fill {
+            background-color: #0F0;
+            height: 20px;
+            border-radius: 20px;
+            transition: width 0.5s ease-in-out;
+        }
+        
+        .progress-label {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        /* 响应式设计 */
+        
+        @media screen and (max-width: 768px) {
+            #sidebar {
+                float: none;
+                width: auto;
+            }
+        }
+        /* NFT 图片样式 */
+        
+        .nft-gallery {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .nft-gallery img {
+            width: 150px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="ad"></canvas>
+    <div id="container">
+        <div id="sidebar">
+            <div id="navigation">
+                <a href="https://icpex.org/exchange?payToken=ox7nm-nyaaa-aaaam-acfkq-cai">swap</a>
+                <a href="https://icpex.org/token/detail/ox7nm-nyaaa-aaaam-acfkq-cai">Pools</a>
+            </div>
+        </div>
+        <a href="index.html" id="home-link">
+            <img src="robot.png" alt="Logo" id="logo">
+        </a>
+        <div id="constitution">
+            <h2>Robot Token LP Sent to Black Hole Report</h2>
+            <p>Date: April 23, 2024</p>
+            <p>Dear Members of the Robot Token Community,</p>
+            <p>We are pleased to announce that the Liquidity Provider (LP) for the Robot Token has been successfully sent to the black hole. This significant move marks our commitment to the Robot ecosystem and brings greater transparency and stability to
+                the community.</p>
+            <p>Here are some key details regarding this initiative:</p>
+            <p><strong>Background and Motivation:</strong> The long-term success of the Robot Token depends on a healthy liquidity pool. However, an overly large liquidity pool can pose risks such as market manipulation. Therefore, we have taken steps to
+                permanently lock a portion of the liquidity into an irretrievable black hole address to maintain the stability and security of the Robot Token.</p>
+            <p><strong>Black Hole Address:</strong> We have injected the liquidity of the Robot Token into the following black hole address: [Black Hole Address]</p>
+            <p><strong>Impact:</strong> The direct impact of this move is a reduction in the total supply of the Robot Token, increasing the scarcity of each token. This will help mitigate inflation and provide greater rewards for long-term holders.</p>
+            <p><strong>Transparency and Verification:</strong> We will ensure transparent tracking of funds in the black hole address and regularly publish reports to the community to verify the secure storage of funds.</p>
+            <p>We believe that this initiative will have a positive impact on the Robot Token ecosystem and create a more favorable environment for our community members. We will continue to strive for the healthy development of the Robot Token and welcome
+                your ongoing support and feedback.</p>
+            <p>Thank you for your attention and trust!</p>
+            <p>Sincerely,</p>
+            <p>[Your Name] Robot Token Project Team</p>
+
+            <!-- 进度条 -->
+            <div class="progress-bar-container">
+                <p class="progress-label">Black Hole Pool: 95%</p>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" style="width: 95%;"></div>
+                </div>
+            </div>
+            <div class="progress-bar-container">
+                <p class="progress-label">Airdrop: 5%</p>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" style="width: 5%;"></div>
+                </div>
+            </div>
+
+            <!-- NFT 图片展示位 -->
+            <div class="nft-gallery">
+                <img src="nft1.png" alt="NFT 1">
+                <img src="nft2.png" alt="NFT 2">
+                <img src="nft3.png" alt="NFT 3">
+                <img src="nft4.png" alt="NFT 4">
+                <img src="nft5.png" alt="NFT 5">
+                <img src="nft6.png" alt="NFT 6">
+            </div>
+        </div>
+    </div>
+    <script>
+        var ad = document.getElementById("ad");
+        var ctx = ad.getContext("2d");
+        ad.height = window.innerHeight;
+        ad.width = window.innerWidth;
+        var chinese = "111001011010010101101101001000001001001001010101000010";
+        chinese = chinese.split("");
+        var font_size = 12;
+        var columns = ad.width / font_size;
+        var drops = [];
+        for (var x = 0; x < columns; x++) drops[x] = 1;
+
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+            ctx.fillRect(0, 0, ad.width, ad.height);
+            ctx.fillStyle = "#0F0";
+            ctx.font = font_size + "px Arial";
+            for (var i = 0; i < drops.length; i++) {
+                var charIndex = Math.floor(Math.random() * chinese.length);
+                ctx.fillText(chinese[charIndex], i * font_size, drops[i] * font_size);
+                if (drops[i] * font_size > ad.height && Math.random() > 0.975)
+                    drops[i] = 0;
+                drops[i]++;
+            }
+        }
+        setInterval(draw, 30);
+    </script>
+</body>
+
+</html>

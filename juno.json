@@ -1,0 +1,7 @@
+{
+    "satellite": {
+        "satelliteId": "vybp4-jaaaa-aaaal-ad5ga-cai",
+        "source": ".",
+        "ignore": ["**/juno.json", "**/.github/**/*", "**/CNAME", "**/LICENSE", "**/README.md", "**/.git/**/*"]
+    }
+}
